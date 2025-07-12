@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1">
+
+	<center>
+		<GridPane alignment="CENTER" hgap="10" vgap="10">
+			<padding>
+				<Insets top="20" right="20" bottom="20" left="20" />
+			</padding>
+			<Label text="Product:" GridPane.rowIndex="0"
+				GridPane.columnIndex="0" />
+			<ComboBox fx:id="productComboBox" prefWidth="200"
+				GridPane.rowIndex="0" GridPane.columnIndex="1" />
+			<Label text="Amount:" GridPane.rowIndex="1"
+				GridPane.columnIndex="0" />
+			<TextField fx:id="amountField" prefWidth="200"
+				GridPane.rowIndex="1" GridPane.columnIndex="1" />
+			<Label text="Start Date:" GridPane.rowIndex="2"
+				GridPane.columnIndex="0" />
+			<DatePicker fx:id="startDatePicker" prefWidth="200"
+				GridPane.rowIndex="2" GridPane.columnIndex="1" />
+			<Label text="Expiry Date:" GridPane.rowIndex="3"
+				GridPane.columnIndex="0" />
+			<DatePicker fx:id="expiryDatePicker" prefWidth="200"
+				GridPane.rowIndex="3" GridPane.columnIndex="1" />
+		</GridPane>
+	</center>
+
+	<bottom>
+		<HBox alignment="CENTER" spacing="15">
+			<padding>
+				<Insets top="10" right="10" bottom="10" left="10" />
+			</padding>
+			<Button fx:id="cancelButton" text="Cancel" prefWidth="100" />
+			<Button fx:id="addButton" text="Add" prefWidth="100" />
+
+		</HBox>
+	</bottom>
+
+</BorderPane>

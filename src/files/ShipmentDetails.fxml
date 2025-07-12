@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.13"
+	xmlns:fx="http://javafx.com/fxml/1">
+
+	<center>
+		<VBox spacing="0">
+			<padding>
+				<Insets top="0" bottom="0" left="0" right="0" />
+			</padding>
+			<TableView fx:id="entryTable" VBox.vgrow="ALWAYS">
+				<columns>
+					<TableColumn fx:id="EntryIdColumn" text="Entry ID"
+						prefWidth="100" />
+					<TableColumn fx:id="productIdColumn" text="Product ID"
+						prefWidth="100" />
+					<TableColumn fx:id="shipmentIdd" text="Shipment ID"
+						prefWidth="150" />
+					<TableColumn fx:id="amountColumn" text="Amount"
+						prefWidth="100" />
+					<TableColumn fx:id="startDateColumn" text="Start Date"
+						prefWidth="150" />
+					<TableColumn fx:id="expiryDateColumn"
+						text="Expiry Date" prefWidth="150" />
+				</columns>
+			</TableView>
+		</VBox>
+	</center>
+
+	<bottom>
+		<HBox alignment="CENTER" spacing="20"
+			BorderPane.alignment="CENTER">
+			<padding>
+				<Insets top="15" bottom="15" left="20" right="20" />
+			</padding>
+			<Button fx:id="backButton" text="Back" prefWidth="120" />
+		</HBox>
+	</bottom>
+
+</BorderPane>

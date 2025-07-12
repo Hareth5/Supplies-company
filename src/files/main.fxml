@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<VBox xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" spacing="10" alignment="CENTER">
+    <children>
+        <TableView fx:id="ordersTable">
+            <columns>
+                <TableColumn text="Product" prefWidth="150">
+                    <cellValueFactory><PropertyValueFactory property="product" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Quantity" prefWidth="100">
+                    <cellValueFactory><PropertyValueFactory property="quantity" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Manufacture Date" prefWidth="150">
+                    <cellValueFactory><PropertyValueFactory property="manufactureDate" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Expiry Date" prefWidth="150">
+                    <cellValueFactory><PropertyValueFactory property="expiryDate" /></cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <Button fx:id="addProductButton" text="Add Product" />
+    </children>
+</VBox>

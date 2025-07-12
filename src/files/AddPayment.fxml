@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label fx:id="title" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Add new Payment" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="20" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <left>
+      <GridPane alignment="TOP_LEFT" hgap="10" prefHeight="291.0" prefWidth="514.0" style="-fx-padding: 0 20 20 20;" vgap="10">
+         <children>
+            <Label fx:id="lName" text="Date:" GridPane.rowIndex="2" />
+            <Label fx:id="lUnitPrice" text="Payment method:" GridPane.rowIndex="3" />
+            <Label fx:id="lManufacturer" text="Amount paid:" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+            <TextField fx:id="unitPrice" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <VBox fx:id="phoneNumbersContainer" spacing="5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <TextField fx:id="phone1" />
+               </children>
+            </VBox>
+            <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Customer:" GridPane.rowIndex="1" />
+            <Label text="Order:" />
+            <ComboBox prefHeight="27.0" prefWidth="186.0" promptText="Order" GridPane.columnIndex="1" />
+            <ComboBox prefHeight="27.0" prefWidth="185.0" promptText="Customer" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </left>
+   <bottom>
+      <HBox alignment="CENTER" spacing="100" style="-fx-padding: 20;">
+         <children>
+            <Button fx:id="cancel" text="Cancel" />
+            <Button fx:id="action" text="Add" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

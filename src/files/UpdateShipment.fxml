@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.13"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="AshaMangmentSystem.UpdateShipment">
+
+
+	<center>
+		<GridPane hgap="10" vgap="15" alignment="CENTER">
+			<padding>
+				<Insets top="20" right="20" bottom="20" left="20" />
+			</padding>
+
+			<ComboBox fx:id="manufacturerCombo" prefWidth="250"
+				GridPane.rowIndex="0" GridPane.columnIndex="0" />
+			<DatePicker fx:id="shipmentDatePicker" prefWidth="250"
+				GridPane.rowIndex="1" GridPane.columnIndex="0" />
+		</GridPane>
+	</center>
+
+	<bottom>
+		<HBox spacing="15" alignment="CENTER">
+			<padding>
+				<Insets top="10" bottom="20" />
+			</padding>
+			<Button fx:id="cancelButton" text="Cancel" prefWidth="100" />
+			<Button fx:id="updateButton2" text="Update" prefWidth="100" />
+		</HBox>
+	</bottom>
+
+</BorderPane>
